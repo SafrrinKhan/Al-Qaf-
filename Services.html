@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" type="text/css" >
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+        <title> Services </title>
+    </head>
+    <style type="text/css">
+    *
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+body
+        {
+            background-color: black;
+        }
+        header
+        {
+            width: 100%;
+            height: 100vh;
+            background-size:contain ;
+            background-repeat:no-repeat;
+            overflow:visible;
+            position:relative;
+        }
+        nav img
+        {
+            width: 50px;
+            height: 50px;
+        }
+.heading
+        {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .heading h1
+        {
+            font-size: 50px;
+            color: #6d213c;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .heading h1::after
+        {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            display: block;
+            margin: 0 auto;
+            background-color: rgb(2, 47, 58);
+        }
+.service-wrapper
+{
+    padding: 0% 3%;
+}
+.service
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 80px;
+}
+.card
+{
+    height: 330px;
+    width: 370px;
+    background-color: #1c2335;
+    padding: 3% 8%;
+    border: 0.2px solid rgba(114,226,174,0.2);
+    border-radius: 8px;
+    transition: 0.6s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow:scroll;
+}
+.card :after
+{
+    content: "";
+    position: absolute;
+    top: 150%;
+    left:-200px;
+    transition:rotate(50deg);
+    background-color:grey;
+    opacity: .5;
+    width: 120%;
+    height: 18px;
+    filter: blur(30px);
+}
+.card :hover :after
+{
+    width: 225%;
+    top:100%;
+}
+.card i
+{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    color: #0f0f0f;
+}
+.card h2
+{
+    color:#6d213c;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.card p
+{
+    color:#666;
+    text-align: center;
+    width: 100%;
+    margin: 12px 0;
+}
+.card :hover
+{
+    background-color: transparent;
+    transform: translateY(-8px);
+    border-color: #00ff37;
+}
+       a 
+        {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+        a:hover
+        {
+            background-color: #666;
+            color: black;
+        }
+        .previous
+        {
+            background-color: black;
+            color:  #6d213c;
+        }
+        .next
+        {
+            background-color: black;
+            color:  #6d213c;
+        }
+        .round
+        {
+            border-radius: 50%;
+        }
+@media (max-width:952px){
+            .header{
+                padding: 0px 20px;
+            }
+            .cards{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+@media (max-width:858px){
+            .header{
+                padding: 0px 20px;
+            }
+            .cards{
+                   grid-template-columns: repeat(1,1fr);
+                 }
+                 h1{
+                    font-size: 3.5rem;
+                 }
+                }
+</style>
+    <body>
+        <header>
+           <nav>
+                <img src="Logo.png">
+            </nav>
+            <div class="heading">
+                <h1>Our Services</h1>
+            </div>
+            <div class="container">
+                <div class="service-wrapper">
+                    <div class="service">
+                        <div class="cards">
+                            <div class="card">
+                                <i class='bx bxs-buildings'></i>
+                                <h2><strong>HEAT STRENGTHENED GLASS</strong></h2>
+                                <p>This is the process that makes the glass four to five times stronger and safer than annealed or untreated glass.<br>
+                                    As a result, tempered glass is less likely to experience a thermal break.<br>
+                                    With heat-strengthened glass, the cooling process is slower, which means the compression strength is lower.</p>
+                            </div>
+                            <div class="card">
+                                <i class='bx bxs-buildings'></i>
+                                    <h2><strong>TEMPERED/TOUGNENED GLASS</strong></h2>
+                                <p>Safety: Once broken, the toughened glasses will shattered into particles. <br>
+                                    Thus, the possibility of its harm to body can be reduced.
+                                    High Strength: Usually, after toughening glass gains 80% surface strength which give protection during direct strike under the stress level.<br>
+                                    Hardness: 3 - 4 times enhanced then the normal glass.<br>
+                                    Thermal Stability: With good thermal stability, to be able to withstand in temperature difference from outer in inner side of applied area of the glasses is three times as big as the common ones.<br>
+                                    Tempered Glass Type: Coated Glass, Pattern Glass, High Profile Reflective Glasses, Colour Glasses, Low-e .03 & SKN.<br>
+                                    Tempered Glass Dimensions: Max. Glass Size 4270 MM X 2745 MM<br>
+                                    The Range of Thickness: Toughened glass 4MM - 19MM</p>
+                            </div>
+                            <div class="card">
+                                <i class='bx bxs-buildings'></i>
+                                        <h2><strong>DOUBLE/TRIPLE GLAZING UNIT (DGU/TGU)</strong> </h2>
+                                    <p>DGU / TGU GLASS with STEP for window<br>
+                                        Two Layers with or without Gas filling <br> & Step
+                                        Three Layers with two spacer lining with or without Gas Filling <br> & Step
+                                        Two Layers with inside Curtains & Blinds.<br>
+                                        (SKN, Low-E, Clear, Coloured, complete range of High Profile Reflective Glasses, Patterned, Frit Glasses & Ceramic Printed) <br>
+                                        The Hermitically Sealed Double/Triple glazed unit (DGU/TGU) used in atmosphere control rooms & equipment, 
+                                        Window frames or Direct mounting with Step Glass, Facade Structure etc.. <br>
+                                        It has few good features of sound restrictions and Heat dissipation along with weather control due to it's manufacturing. </p>
+                            </div>
+                            <div class="card">
+                                <i class='bx bxs-buildings'></i>
+                                <h2><strong>ACID ETCHING</strong> </h2>
+                            <p>Traditionally the process of using strong acid or mordant to cut into the unprotected layer of a Glass 
+                                to create a design in intaglio (incised) in the Glass.</p>
+                            </div>  
+                        </div>
+                    </div>
+            </div>
+            </div>
+            <a href="About.html" class="previous">&laquo; Previous</a>
+<a href="Gallery.html" class="next">Next &raquo;</a>
+        </header>
+    </body>
+</html>

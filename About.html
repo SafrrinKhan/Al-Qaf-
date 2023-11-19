@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="text/css">
+        <title>About Us </title>
+    </head>
+    <style type="text/css">
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'roboto', sans-serif;
+        }
+        body
+        {
+            background-color: black;
+        }
+        header
+        {
+            width: 100%;
+            height: 100vh;
+            background-size:contain ;
+            background-repeat:no-repeat;
+            overflow:visible;
+            position:relative;
+        }
+        nav img
+        {
+            width: 50px;
+            height: 50px;
+        }
+        .heading
+        {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .heading h1
+        {
+            font-size: 50px;
+            color: #6d213c;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .heading h1::after
+        {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            display: block;
+            margin: 0 auto;
+            background-color: rgb(2, 47, 58);
+        }
+        .container 
+        {
+            width: 90%;
+            margin: o auto;
+            padding: 10px 20px;
+        }
+        .about
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .about-image
+        {
+            flex: 1;
+            margin-right: 40px;
+            overflow: hidden;
+            
+        }
+        .about-image img
+        {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            transition: 0.5s ease;
+        }
+        .about-image :hover img
+        {
+            transform: scale(1.2);
+        }
+        .about-content 
+        {
+            flex: 1;
+        }
+        h2
+        {
+            font-size: 23px;
+            margin-bottom: 15px;
+            color: #6d213c;
+        }
+        .about-content p{
+            font-size: 18px;
+            line-height: 1.5;
+            color: #666;
+        }
+        a 
+        {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+        a:hover
+        {
+            background-color:#666;
+            color: black;
+        }
+        .previous
+        {
+            background-color: black;
+            color:  #6d213c;
+        }
+        .next
+        {
+            background-color: black;
+            color:  #6d213c;
+        }
+        .round
+        {
+            border-radius: 50%;
+        }
+        @media (max-width :768px)
+        {
+            .header{
+                padding: 0px 20px;
+            }
+            .heading{
+                padding: 0px 20px;
+            }
+            .heading h1{
+                font-size: 36px;
+            }
+            .heading p{
+                font-size: 17px;
+                margin-bottom: 0px;
+            }
+            .container{
+                padding: 0px;
+            }
+            .about{
+                padding: 20px;
+                flex-direction: column;
+            }
+            .about-image{
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+            .about-content{
+                padding: 0px;
+                font-size: 16px;
+            }
+        }
+
+    </style>
+    <body>
+        <header>
+            <nav>
+                <img src="Logo.png">
+            </nav>
+            <div class="heading">
+            <h1>About Us</h1>
+        </div>
+        <div class="container">
+            <section class="about">
+                <div class="about-image">
+                    <img src="background.png">
+                    <h2>Imraan Shareef</h2>
+                </div>
+                <div class="about-content">
+                    <p>Al-Qaf Glass Solutionn is an Glass interior & exterior design company offering an array of design options for the Residential and Commercial projects.<br> With collaboration of highly equipped, qualified, skilled, experienced and innovative professionals, who associate themselves with leading architects, interior designers, builders, manufacturers, 
+                        contractors, and individuals for their interior and exterior related requirements keeping in mind firmly of their taste, need, and budget. 
+                        <br>We are expertise in the following areas:<br>
+                        Fixed Glass Partition & Doors,<br>
+                        Office Partition,<br>
+                        Glass railing,<br>
+                        Pergola OTS,<br>
+                        Elevation glazing,<br>
+                        Foldable Glass Doors,<br>
+                        Telescopic Sliding Doors,<br>
+                        Spider Glass Work,<br>
+                        Bend Glass work,etc.</p>
+            </section>
+        </div>
+        <a href="index.html" class="previous">&laquo; Previous</a>
+        <a href="Services.html" class="next">Next &raquo;</a>
+    </header>
+    </body>
+</html>
+
